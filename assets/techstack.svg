@@ -1,0 +1,445 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 850 600" width="100%" height="100%" style="border-radius: 12px; background: #06070a;">
+  <defs>
+    <!-- Import Google Fonts -->
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@600;800;900&amp;family=Rajdhani:wght@600;700&amp;family=Share+Tech+Mono&amp;display=swap');
+      
+      .header-title {
+        font-family: 'Orbitron', -apple-system, sans-serif;
+        font-weight: 800;
+        fill: #ffffff;
+        letter-spacing: 2px;
+        font-size: 18px;
+        text-shadow: 0 0 10px rgba(0, 243, 255, 0.4);
+      }
+      
+      .panel-title {
+        font-family: 'Rajdhani', sans-serif;
+        font-weight: 700;
+        letter-spacing: 1.5px;
+        font-size: 12px;
+      }
+      
+      .tech-text {
+        font-family: 'Share Tech Mono', monospace;
+        fill: #e1e7ed;
+        font-size: 11px;
+      }
+      
+      .badge-bg {
+        fill: #0f121d;
+        stroke: #22293f;
+        stroke-width: 1;
+      }
+    </style>
+
+    <!-- Glowing Filters -->
+    <filter id="glow-cyan" x="-25%" y="-25%" width="150%" height="150%">
+      <feGaussianBlur stdDeviation="3" result="blur" />
+      <feMerge>
+        <feMergeNode in="blur" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+
+    <filter id="glow-magenta" x="-25%" y="-25%" width="150%" height="150%">
+      <feGaussianBlur stdDeviation="3" result="blur" />
+      <feMerge>
+        <feMergeNode in="blur" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+
+    <filter id="glow-purple" x="-25%" y="-25%" width="150%" height="150%">
+      <feGaussianBlur stdDeviation="3" result="blur" />
+      <feMerge>
+        <feMergeNode in="blur" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+
+    <filter id="glow-green" x="-25%" y="-25%" width="150%" height="150%">
+      <feGaussianBlur stdDeviation="3" result="blur" />
+      <feMerge>
+        <feMergeNode in="blur" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+
+    <!-- Gradients -->
+    <linearGradient id="main-border" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ff007f" />
+      <stop offset="50%" stop-color="#9d4edd" />
+      <stop offset="100%" stop-color="#00f3ff" />
+    </linearGradient>
+
+    <!-- Grid Pattern -->
+    <pattern id="tech-grid" width="30" height="30" patternUnits="userSpaceOnUse">
+      <path d="M 30 0 L 0 0 0 30" fill="none" stroke="#121620" stroke-width="1" />
+    </pattern>
+  </defs>
+
+  <!-- Background Base -->
+  <rect width="100%" height="100%" fill="#06070a" />
+  <rect width="100%" height="100%" fill="url(#tech-grid)" opacity="0.75" />
+
+  <!-- Outer Glassmorphic Container -->
+  <rect x="40" y="30" width="770" height="540" rx="16" fill="#0b0d15" fill-opacity="0.85" />
+  <rect x="40" y="30" width="770" height="540" rx="16" fill="none" stroke="url(#main-border)" stroke-width="2" opacity="0.8" />
+
+  <!-- Header Title -->
+  <g transform="translate(60, 55)">
+    <rect x="-5" y="3" width="6" height="15" fill="#9d4edd" />
+    <text x="10" y="15" class="header-title">TECHNOLOGY INDEX // STACK</text>
+  </g>
+
+  <!-- ================= CATEGORY 01: LANGUAGES (Top-Left) ================= -->
+  <g transform="translate(55, 80)">
+    <!-- Sub-Panel Frame -->
+    <rect width="360" height="220" rx="10" fill="#0c0e18" fill-opacity="0.7" stroke="#1d2238" stroke-width="1.5" />
+    <path d="M 0,20 L 0,0 L 20,0" stroke="#00f3ff" stroke-width="2" fill="none" />
+    <text x="15" y="22" class="panel-title" fill="#00f3ff">01 // LANGUAGES &amp; CORE</text>
+
+    <!-- Badges Row 1 (y="45") -->
+    <g transform="translate(15, 45)">
+      <!-- Python (Cyan) -->
+      <g transform="translate(0, 0)">
+        <rect width="85" height="26" rx="6" class="badge-bg" />
+        <circle cx="12" cy="13" r="3.5" fill="#00f3ff" filter="url(#glow-cyan)" />
+        <text x="22" y="17" class="tech-text">Python</text>
+      </g>
+      <!-- JavaScript (Yellow/Magenta) -->
+      <g transform="translate(95, 0)">
+        <rect width="105" height="26" rx="6" class="badge-bg" />
+        <circle cx="12" cy="13" r="3.5" fill="#ff007f" filter="url(#glow-magenta)" />
+        <text x="22" y="17" class="tech-text">JavaScript</text>
+      </g>
+      <!-- C++ (Purple) -->
+      <g transform="translate(210, 0)">
+        <rect width="65" height="26" rx="6" class="badge-bg" />
+        <circle cx="12" cy="13" r="3.5" fill="#9d4edd" filter="url(#glow-purple)" />
+        <text x="22" y="17" class="tech-text">C++</text>
+      </g>
+      <!-- C (Purple) -->
+      <g transform="translate(285, 0)">
+        <rect width="45" height="26" rx="6" class="badge-bg" />
+        <circle cx="12" cy="13" r="3.5" fill="#9d4edd" filter="url(#glow-purple)" />
+        <text x="22" y="17" class="tech-text">C</text>
+      </g>
+    </g>
+
+    <!-- Badges Row 2 (y="85") -->
+    <g transform="translate(15, 85)">
+      <!-- HTML5 (Green) -->
+      <g transform="translate(0, 0)">
+        <rect width="80" height="26" rx="6" class="badge-bg" />
+        <circle cx="12" cy="13" r="3.5" fill="#3ecf8e" filter="url(#glow-green)" />
+        <text x="22" y="17" class="tech-text">HTML5</text>
+      </g>
+      <!-- CSS3 (Green) -->
+      <g transform="translate(90, 0)">
+        <rect width="75" height="26" rx="6" class="badge-bg" />
+        <circle cx="12" cy="13" r="3.5" fill="#3ecf8e" filter="url(#glow-green)" />
+        <text x="22" y="17" class="tech-text">CSS3</text>
+      </g>
+      <!-- PHP (Purple) -->
+      <g transform="translate(175, 0)">
+        <rect width="65" height="26" rx="6" class="badge-bg" />
+        <circle cx="12" cy="13" r="3.5" fill="#9d4edd" filter="url(#glow-purple)" />
+        <text x="22" y="17" class="tech-text">PHP</text>
+      </g>
+      <!-- Bash Script (Cyan) -->
+      <g transform="translate(250, 0)">
+        <rect width="80" height="26" rx="6" class="badge-bg" />
+        <circle cx="12" cy="13" r="3.5" fill="#00f3ff" filter="url(#glow-cyan)" />
+        <text x="22" y="17" class="tech-text">Bash</text>
+      </g>
+    </g>
+
+    <!-- Badges Row 3 (y="125") -->
+    <g transform="translate(15, 125)">
+      <!-- Arduino (Cyan) -->
+      <g transform="translate(0, 0)">
+        <rect width="90" height="26" rx="6" class="badge-bg" />
+        <circle cx="12" cy="13" r="3.5" fill="#00f3ff" filter="url(#glow-cyan)" />
+        <text x="22" y="17" class="tech-text">Arduino</text>
+      </g>
+      <!-- Figma (Magenta) -->
+      <g transform="translate(100, 0)">
+        <rect width="80" height="26" rx="6" class="badge-bg" />
+        <circle cx="12" cy="13" r="3.5" fill="#ff007f" filter="url(#glow-magenta)" />
+        <text x="22" y="17" class="tech-text">Figma</text>
+      </g>
+      <!-- WordPress (Purple) -->
+      <g transform="translate(190, 0)">
+        <rect width="100" height="26" rx="6" class="badge-bg" />
+        <circle cx="12" cy="13" r="3.5" fill="#9d4edd" filter="url(#glow-purple)" />
+        <text x="22" y="17" class="tech-text">WordPress</text>
+      </g>
+    </g>
+    
+    <!-- Badges Row 4 (y="165") -->
+    <g transform="translate(15, 165)">
+      <!-- PHP / SQL or other tags -->
+      <g transform="translate(0, 0)">
+        <rect width="130" height="26" rx="6" class="badge-bg" />
+        <circle cx="12" cy="13" r="3.5" fill="#3ecf8e" filter="url(#glow-green)" />
+        <text x="22" y="17" class="tech-text">Urban Intelligence</text>
+      </g>
+    </g>
+  </g>
+
+  <!-- ================= CATEGORY 02: FRONTEND (Top-Right) ================= -->
+  <g transform="translate(435, 80)">
+    <!-- Sub-Panel Frame -->
+    <rect width="360" height="220" rx="10" fill="#0c0e18" fill-opacity="0.7" stroke="#1d2238" stroke-width="1.5" />
+    <path d="M 360,20 L 360,0 L 340,0" stroke="#ff007f" stroke-width="2" fill="none" />
+    <text x="15" y="22" class="panel-title" fill="#ff007f">02 // FRONTEND COMPILERS</text>
+
+    <!-- Badges Row 1 (y="45") -->
+    <g transform="translate(15, 45)">
+      <!-- React (Cyan) -->
+      <g transform="translate(0, 0)">
+        <rect width="80" height="26" rx="6" class="badge-bg" />
+        <circle cx="12" cy="13" r="3.5" fill="#00f3ff" filter="url(#glow-cyan)" />
+        <text x="22" y="17" class="tech-text">ReactJS</text>
+      </g>
+      <!-- Next.js (White/Magenta) -->
+      <g transform="translate(90, 0)">
+        <rect width="90" height="26" rx="6" class="badge-bg" />
+        <circle cx="12" cy="13" r="3.5" fill="#ff007f" filter="url(#glow-magenta)" />
+        <text x="22" y="17" class="tech-text">Next.js</text>
+      </g>
+      <!-- Context API (Cyan) -->
+      <g transform="translate(190, 0)">
+        <rect width="115" height="26" rx="6" class="badge-bg" />
+        <circle cx="12" cy="13" r="3.5" fill="#00f3ff" filter="url(#glow-cyan)" />
+        <text x="22" y="17" class="tech-text">Context API</text>
+      </g>
+    </g>
+
+    <!-- Badges Row 2 (y="95") -->
+    <g transform="translate(15, 95)">
+      <!-- Tailwind CSS (Cyan) -->
+      <g transform="translate(0, 0)">
+        <rect width="110" height="26" rx="6" class="badge-bg" />
+        <circle cx="12" cy="13" r="3.5" fill="#00f3ff" filter="url(#glow-cyan)" />
+        <text x="22" y="17" class="tech-text">TailwindCSS</text>
+      </g>
+      <!-- Bootstrap (Purple) -->
+      <g transform="translate(120, 0)">
+        <rect width="100" height="26" rx="6" class="badge-bg" />
+        <circle cx="12" cy="13" r="3.5" fill="#9d4edd" filter="url(#glow-purple)" />
+        <text x="22" y="17" class="tech-text">Bootstrap</text>
+      </g>
+      <!-- Chart.js (Magenta) -->
+      <g transform="translate(230, 0)">
+        <rect width="90" height="26" rx="6" class="badge-bg" />
+        <circle cx="12" cy="13" r="3.5" fill="#ff007f" filter="url(#glow-magenta)" />
+        <text x="22" y="17" class="tech-text">Chart.js</text>
+      </g>
+    </g>
+    
+    <!-- Background graphical HUD wireframe -->
+    <path d="M 30,170 L 330,170 M 150,150 L 150,190" stroke="#1d2238" stroke-dasharray="2 4" stroke-width="1.5" />
+    <circle cx="150" cy="170" r="10" fill="none" stroke="#ff007f" stroke-width="1" opacity="0.3" />
+    <text x="15" y="200" font-family="Share Tech Mono" font-size="9" fill="#4d5b7c">VIEWPORT_RENDER: HYDRATED</text>
+  </g>
+
+  <!-- ================= CATEGORY 03: BACKEND & DATA (Bottom-Left) ================= -->
+  <g transform="translate(55, 315)">
+    <!-- Sub-Panel Frame -->
+    <rect width="360" height="230" rx="10" fill="#0c0e18" fill-opacity="0.7" stroke="#1d2238" stroke-width="1.5" />
+    <path d="M 0,210 L 0,230 L 20,230" stroke="#9d4edd" stroke-width="2" fill="none" />
+    <text x="15" y="22" class="panel-title" fill="#9d4edd">03 // BACKEND &amp; DATA SYSTEMS</text>
+
+    <!-- Badges Row 1 (y="45") -->
+    <g transform="translate(15, 45)">
+      <!-- NodeJS (Green) -->
+      <g transform="translate(0, 0)">
+        <rect width="85" height="26" rx="6" class="badge-bg" />
+        <circle cx="12" cy="13" r="3.5" fill="#3ecf8e" filter="url(#glow-green)" />
+        <text x="22" y="17" class="tech-text">NodeJS</text>
+      </g>
+      <!-- Flask (White/Cyan) -->
+      <g transform="translate(95, 0)">
+        <rect width="75" height="26" rx="6" class="badge-bg" />
+        <circle cx="12" cy="13" r="3.5" fill="#00f3ff" filter="url(#glow-cyan)" />
+        <text x="22" y="17" class="tech-text">Flask</text>
+      </g>
+      <!-- FastAPI (Cyan) -->
+      <g transform="translate(180, 0)">
+        <rect width="85" height="26" rx="6" class="badge-bg" />
+        <circle cx="12" cy="13" r="3.5" fill="#00f3ff" filter="url(#glow-cyan)" />
+        <text x="22" y="17" class="tech-text">FastAPI</text>
+      </g>
+      <!-- Apache (Magenta) -->
+      <g transform="translate(275, 0)">
+        <rect width="70" height="26" rx="6" class="badge-bg" />
+        <circle cx="12" cy="13" r="3.5" fill="#ff007f" filter="url(#glow-magenta)" />
+        <text x="22" y="17" class="tech-text">Apache</text>
+      </g>
+    </g>
+
+    <!-- Badges Row 2 (y="95") -->
+    <g transform="translate(15, 95)">
+      <!-- PostgreSQL (Cyan) -->
+      <g transform="translate(0, 0)">
+        <rect width="105" height="26" rx="6" class="badge-bg" />
+        <circle cx="12" cy="13" r="3.5" fill="#00f3ff" filter="url(#glow-cyan)" />
+        <text x="22" y="17" class="tech-text">PostgreSQL</text>
+      </g>
+      <!-- MongoDB (Green) -->
+      <g transform="translate(115, 0)">
+        <rect width="90" height="26" rx="6" class="badge-bg" />
+        <circle cx="12" cy="13" r="3.5" fill="#3ecf8e" filter="url(#glow-green)" />
+        <text x="22" y="17" class="tech-text">MongoDB</text>
+      </g>
+      <!-- MySQL (Purple) -->
+      <g transform="translate(215, 0)">
+        <rect width="75" height="26" rx="6" class="badge-bg" />
+        <circle cx="12" cy="13" r="3.5" fill="#9d4edd" filter="url(#glow-purple)" />
+        <text x="22" y="17" class="tech-text">MySQL</text>
+      </g>
+    </g>
+
+    <!-- Badges Row 3 (y="145") -->
+    <g transform="translate(15, 145)">
+      <!-- Supabase (Green) -->
+      <g transform="translate(0, 0)">
+        <rect width="95" height="26" rx="6" class="badge-bg" />
+        <circle cx="12" cy="13" r="3.5" fill="#3ecf8e" filter="url(#glow-green)" />
+        <text x="22" y="17" class="tech-text">Supabase</text>
+      </g>
+      <!-- Firebase (Magenta/Orange) -->
+      <g transform="translate(105, 0)">
+        <rect width="90" height="26" rx="6" class="badge-bg" />
+        <circle cx="12" cy="13" r="3.5" fill="#ff007f" filter="url(#glow-magenta)" />
+        <text x="22" y="17" class="tech-text">Firebase</text>
+      </g>
+      <!-- Postman (Orange/Magenta) -->
+      <g transform="translate(205, 0)">
+        <rect width="90" height="26" rx="6" class="badge-bg" />
+        <circle cx="12" cy="13" r="3.5" fill="#ff007f" filter="url(#glow-magenta)" />
+        <text x="22" y="17" class="tech-text">Postman</text>
+      </g>
+    </g>
+    
+    <!-- Extra status metrics -->
+    <text x="15" y="210" font-family="Share Tech Mono" font-size="9" fill="#4d5b7c">DATABASE_CLUSTERS: ONLINE // REPLICATED</text>
+  </g>
+
+  <!-- ================= CATEGORY 04: AI & CLOUD (Bottom-Right) ================= -->
+  <g transform="translate(435, 315)">
+    <!-- Sub-Panel Frame -->
+    <rect width="360" height="230" rx="10" fill="#0c0e18" fill-opacity="0.7" stroke="#1d2238" stroke-width="1.5" />
+    <path d="M 360,210 L 360,230 L 340,230" stroke="#00f3ff" stroke-width="2" fill="none" />
+    <text x="15" y="22" class="panel-title" fill="#00f3ff">04 // AI / ML &amp; ENVIRONMENT</text>
+
+    <!-- Badges Row 1 (y="45") -->
+    <g transform="translate(15, 45)">
+      <!-- TensorFlow (Magenta/Orange) -->
+      <g transform="translate(0, 0)">
+        <rect width="105" height="26" rx="6" class="badge-bg" />
+        <circle cx="12" cy="13" r="3.5" fill="#ff007f" filter="url(#glow-magenta)" />
+        <text x="22" y="17" class="tech-text">TensorFlow</text>
+      </g>
+      <!-- PyTorch (Magenta) -->
+      <g transform="translate(115, 0)">
+        <rect width="85" height="26" rx="6" class="badge-bg" />
+        <circle cx="12" cy="13" r="3.5" fill="#ff007f" filter="url(#glow-magenta)" />
+        <text x="22" y="17" class="tech-text">PyTorch</text>
+      </g>
+      <!-- Keras (Magenta) -->
+      <g transform="translate(210, 0)">
+        <rect width="70" height="26" rx="6" class="badge-bg" />
+        <circle cx="12" cy="13" r="3.5" fill="#ff007f" filter="url(#glow-magenta)" />
+        <text x="22" y="17" class="tech-text">Keras</text>
+      </g>
+      <!-- CUDA (Green) -->
+      <g transform="translate(290, 0)">
+        <rect width="55" height="26" rx="6" class="badge-bg" />
+        <circle cx="12" cy="13" r="3.5" fill="#3ecf8e" filter="url(#glow-green)" />
+        <text x="22" y="17" class="tech-text">CUDA</text>
+      </g>
+    </g>
+
+    <!-- Badges Row 2 (y="95") -->
+    <g transform="translate(15, 95)">
+      <!-- OpenCV (Cyan) -->
+      <g transform="translate(0, 0)">
+        <rect width="80" height="26" rx="6" class="badge-bg" />
+        <circle cx="12" cy="13" r="3.5" fill="#00f3ff" filter="url(#glow-cyan)" />
+        <text x="22" y="17" class="tech-text">OpenCV</text>
+      </g>
+      <!-- scikit-learn (Cyan) -->
+      <g transform="translate(90, 0)">
+        <rect width="110" height="26" rx="6" class="badge-bg" />
+        <circle cx="12" cy="13" r="3.5" fill="#00f3ff" filter="url(#glow-cyan)" />
+        <text x="22" y="17" class="tech-text">scikit-learn</text>
+      </g>
+      <!-- NumPy (Purple) -->
+      <g transform="translate(210, 0)">
+        <rect width="70" height="26" rx="6" class="badge-bg" />
+        <circle cx="12" cy="13" r="3.5" fill="#9d4edd" filter="url(#glow-purple)" />
+        <text x="22" y="17" class="tech-text">NumPy</text>
+      </g>
+      <!-- Pandas (Purple) -->
+      <g transform="translate(290, 0)">
+        <rect width="55" height="26" rx="6" class="badge-bg" />
+        <circle cx="12" cy="13" r="3.5" fill="#9d4edd" filter="url(#glow-purple)" />
+        <text x="22" y="17" class="tech-text">Pandas</text>
+      </g>
+    </g>
+
+    <!-- Badges Row 3 (y="145") -->
+    <g transform="translate(15, 145)">
+      <!-- Cloudflare (Cyan) -->
+      <g transform="translate(0, 0)">
+        <rect width="100" height="26" rx="6" class="badge-bg" />
+        <circle cx="12" cy="13" r="3.5" fill="#00f3ff" filter="url(#glow-cyan)" />
+        <text x="22" y="17" class="tech-text">Cloudflare</text>
+      </g>
+      <!-- Google Cloud (Cyan) -->
+      <g transform="translate(110, 0)">
+        <rect width="115" height="26" rx="6" class="badge-bg" />
+        <circle cx="12" cy="13" r="3.5" fill="#00f3ff" filter="url(#glow-cyan)" />
+        <text x="22" y="17" class="tech-text">Google Cloud</text>
+      </g>
+      <!-- Vercel (White/Magenta) -->
+      <g transform="translate(235, 0)">
+        <rect width="75" height="26" rx="6" class="badge-bg" />
+        <circle cx="12" cy="13" r="3.5" fill="#ff007f" filter="url(#glow-magenta)" />
+        <text x="22" y="17" class="tech-text">Vercel</text>
+      </g>
+    </g>
+
+    <!-- Badges Row 4 (y="195") -->
+    <g transform="translate(15, 195)">
+      <!-- Netlify (Green) -->
+      <g transform="translate(0, 0)">
+        <rect width="85" height="26" rx="6" class="badge-bg" />
+        <circle cx="12" cy="13" r="3.5" fill="#3ecf8e" filter="url(#glow-green)" />
+        <text x="22" y="17" class="tech-text">Netlify</text>
+      </g>
+      <!-- Render (Green) -->
+      <g transform="translate(95, 0)">
+        <rect width="80" height="26" rx="6" class="badge-bg" />
+        <circle cx="12" cy="13" r="3.5" fill="#3ecf8e" filter="url(#glow-green)" />
+        <text x="22" y="17" class="tech-text">Render</text>
+      </g>
+      <!-- Git (Purple) -->
+      <g transform="translate(185, 0)">
+        <rect width="55" height="26" rx="6" class="badge-bg" />
+        <circle cx="12" cy="13" r="3.5" fill="#9d4edd" filter="url(#glow-purple)" />
+        <text x="22" y="17" class="tech-text">Git</text>
+      </g>
+      <!-- GitLab (Magenta/Orange) -->
+      <g transform="translate(250, 0)">
+        <rect width="75" height="26" rx="6" class="badge-bg" />
+        <circle cx="12" cy="13" r="3.5" fill="#ff007f" filter="url(#glow-magenta)" />
+        <text x="22" y="17" class="tech-text">GitLab</text>
+      </g>
+    </g>
+  </g>
+</svg>
