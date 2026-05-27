@@ -53,8 +53,3 @@
 
 ---
 
-<div align="center">
-  <p font-family="monospace" size="2">
-    <sub>SYSTEM INITIALIZATION COMPLETED // SECURE CONTEXT INITIALIZED</sub>
-  </p>
-</div>
