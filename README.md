@@ -41,7 +41,7 @@
   </a>
   &nbsp;
   <a href="https://github.com/Adithya-krishnan-ks" target="_blank">
-    <img src="https://streak-stats.demolab.com/?user=Adithya-krishnan-ks&theme=black-ice&hide_border=true&background=0b0d15&stroke=1d2238&ring=00f3ff&fire=ff007f&currStreakNum=00f3ff&sideNums=c9d1d9&sideLabels=c9d1d9&dates=697b9e" alt="Adithya's Streak Stats" height="180px" />
+    
   </a>
 </p>
 
