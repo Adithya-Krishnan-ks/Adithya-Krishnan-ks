@@ -35,15 +35,7 @@
 <h2 align="center">📊 SYSTEM TELEMETRY</h2>
 
 <!-- GitHub Stats Grid (Color Matched to Cyberpunk Glass Cards) -->
-<p align="center">
-  <a href="https://github.com/Adithya-krishnan-ks" target="_blank">
-    <img src="https://github-readme-stats.shion.dev/api?username=Adithya-krishnan-ks&bg_color=0b0d15&title_color=00f3ff&text_color=c9d1d9&icon_color=ff007f&hide_border=true&include_all_commits=true&count_private=true" alt="Adithya's GitHub Stats" height="180px" />
-  </a>
-  &nbsp;
-  <a href="https://github.com/Adithya-krishnan-ks" target="_blank">
-    
-  </a>
-</p>
+
 
 <p align="center">
   <a href="https://github.com/Adithya-krishnan-ks" target="_blank">
